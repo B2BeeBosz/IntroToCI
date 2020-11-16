@@ -137,12 +137,12 @@ def GA_MLPmodel(X, Y, layers_dims, max_population, max_generation, print_fitness
                 fitness = calculate_fitness(cost)
                 fitnesses.append(fitness)
             
-            # Select Population
-            mating_pool = linear_ranking_selection(chromosomes)
-            # Crossover
-            new_chromosomes = crossover(mating_pool, chromosomes)
-            # Mutation
-            next_gen_chromosomes = mutation(new_chromosomes)
+        # Select Population
+        mating_pool = linear_ranking_selection(chromosomes)
+        # Crossover
+        new_chromosomes = crossover(mating_pool, chromosomes)
+        # Mutation
+        next_gen_chromosomes = mutation(new_chromosomes)
 
         # print cost
         if (generation % 10 == 0 and print_fitness == True):

@@ -118,10 +118,10 @@ def load_data(X_data, D_data, cross_percent, rounds):
     return X_train, D_train, X_test, D_test
 
 
-# X_data, D_data = load_text("./HW3/wdbc.data")
-# X_train, D_train, X_test, D_test = load_data(X_data, D_data, 10, 0)
-# print(X_data.shape)
-# print(D_data.shape)
+X_data, D_data = load_text("./HW3/wdbc.data")
+X_train, D_train, X_test, D_test = load_data(X_data, D_data, 10, 0)
+print(X_data.shape)
+print(D_data.shape)
 # print(D_data)
 # print(X_train.shape)
 # print(D_train.shape)
